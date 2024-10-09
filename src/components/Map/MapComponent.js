@@ -6,8 +6,8 @@ import markerImage from "../../assets/gps_10577745.png";
 
 const customIcon = L.icon({
   iconUrl: markerImage,
-  iconSize: [10, 10],
-  iconAnchor: [7, 10],
+  iconSize: [15, 15],
+  iconAnchor: [10, 15],
   popupAnchor: [-3, -36],
 });
 
@@ -71,7 +71,7 @@ const MapComponent = () => {
     };
   }, [map, markers]);
 
-  return <div id="map" style={{ height: "500px", width: "100%" }} />;
+  return <div id="map" style={{ height: "1000px", width: "100%" }} />;
 };
 
 export default MapComponent;
